@@ -1,3 +1,34 @@
+interface Validatable {
+  value: string | number
+  require?: boolean
+  minLength?: number
+  maxLength?: number
+  min?: number
+  max?: number
+}
+
+function validate(validatableInput: Validatable) {
+  let isValid = true
+  if (validatableInput.require) {
+    isValid = isValid && validatableInput.value.toString().trim().length !== 0
+  }
+  if (validatableInput.minLength != null && // != null is equivalent to !== null && !== undefined
+    typeof validatableInput.value === 'string') {
+    isValid = isValid && validatableInput.value.length >= validatableInput.minLength
+  }
+  if (validatableInput.maxLength != null &&
+    typeof validatableInput.value === 'string') {
+    isValid = isValid && validatableInput.value.length <= validatableInput.maxLength
+  }
+  if (validatableInput.min != null && typeof validatableInput.value === 'number') {
+    isValid = isValid && validatableInput.value >= validatableInput.min
+  }
+  if (validatableInput.max != null && typeof validatableInput.value === 'number') {
+    isValid = isValid && validatableInput.value <= validatableInput.max
+  }
+  return isValid
+}
+
 /**
  * An autobinding decorator that will bind the `this` keyword refering to
  * the object instance of the decorated method. This is to avoid the need
@@ -46,9 +77,26 @@ class ProjectInput {
     const enteredTitle = this.titleInputElement.value
     const enteredDescription = this.descriptionInputElement.value
     const enteredPeople = this.peopleInputElement.value
-    if (enteredTitle.trim().length === 0 ||
-      enteredPeople.trim().length === 0 ||
-      enteredPeople.trim().length === 0) {
+
+    const titleValidatable: Validatable = {
+      value: enteredTitle,
+      require: true
+    }
+    const descriptionValidatable: Validatable = {
+      value: enteredDescription,
+      require: true,
+      minLength: 5
+    }
+    const peopleValidatable: Validatable = {
+      value: +enteredPeople,
+      require: true,
+      min: 1,
+      max: 5
+    }
+
+    if (!validate(titleValidatable) ||
+      !validate(descriptionValidatable) ||
+      !validate(peopleValidatable)) {
       alert('Invalid input. Please try again.')
       return
     } else {
