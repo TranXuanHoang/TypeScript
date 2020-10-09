@@ -1,6 +1,10 @@
 # Basics of TypeScript
 
-This project contains the basic development setup when working with TypeScript.
+This project contains the basic development setup and foundational concepts when working with TypeScript. A simple web app allowing users to add and manage active and finished projects. The app's front-end logic is written completely with TypeScript.
+
+<p align="center">
+  <img src="./docs/AppSnapshot.gif" width="60%"/>
+</p>
 
 ## 3rd-Party Packages
 
@@ -17,15 +21,10 @@ Switch the source code to versions described below to view different implementat
 | Git Tag | Implementation |
 |---------|----------------|
 | [v1.0.0](https://github.com/TranXuanHoang/TypeScript/releases/tag/v1.0.0) | Basic setup for a web app using TypeScript to write its front-end logic |
+| [v1.1.0](https://github.com/TranXuanHoang/TypeScript/releases/tag/v1.1.0) | Write a dashboard web app all allowing us to create and manage projects |
 
 ## Run App
 
 * Install `Node.js` dependencies with `npm install`
 * To compile `TypeScript` `.ts` files into `JavaScript` automatically whenever new changes are added to any of `TypeScript` files, run `tsc -w` or `tsc --watch`
 * Then, run `npm start` that will spin up a `lite-server` hosting all resources including `.html`, `.css` and the compiled `.js` files in the `dist` directory
-
-## Others
-
-* [Debugging TypeScript with Visual Studio Code](https://code.visualstudio.com/docs/typescript/typescript-debugging)
-* [TypeScript Compiler Options](https://www.typescriptlang.org/docs/handbook/compiler-options.html)
-* [TypeScript Config File](https://www.typescriptlang.org/tsconfig)
