@@ -22,7 +22,8 @@ Switch the source code to versions described below to view different implementat
 |---------|----------------|
 | [v1.0.0](https://github.com/TranXuanHoang/TypeScript/releases/tag/v1.0.0) | Basic setup for a web app using TypeScript to write its front-end logic |
 | [v1.1.0](https://github.com/TranXuanHoang/TypeScript/releases/tag/v1.1.0) | Write a dashboard web app that allows users to create and manage projects |
-| [v1.1.1](https://github.com/TranXuanHoang/TypeScript/releases/tag/v1.1.1) | Split source code of the dashboard web app into multiple files using `TypeScript`'s `namespace` |
+| [v1.1.1](https://github.com/TranXuanHoang/TypeScript/releases/tag/v1.1.1) | Split source code of the dashboard web app into multiple files using [`TypeScript` `namespace`](https://www.typescriptlang.org/docs/handbook/namespaces.html) |
+| [v1.1.2](https://github.com/TranXuanHoang/TypeScript/releases/tag/v1.1.2) | Split source code of the dashboard web app into multiple files using [`JavaScript` `modules`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) |
 
 ## Run App
 
