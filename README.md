@@ -6,4 +6,4 @@ Working with [TypeScript](https://www.typescriptlang.org/) through examples.
 
 |Project |Purpose |Keywords |
 |--------|--------|---------|
-| [01-basic](./01-basic) | Demonstrates basic concepts of [TypeScript](https://www.typescriptlang.org/) | `TypeScript` `lite-server` |
+| [01-basic](./01-basic) | Demonstrates basic concepts of [TypeScript](https://www.typescriptlang.org/) | `TypeScript` `lite-server` `Webpack` |
