@@ -5,6 +5,9 @@
     },
     {
       "path": "01-basic"
+    },
+    {
+      "path": "02-google-maps"
     }
   ],
   "settings": {}

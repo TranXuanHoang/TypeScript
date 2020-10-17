@@ -8,8 +8,15 @@
       "type": "chrome",
       "request": "launch",
       "name": "01-basic",
-      "url": "http://localhost:3000",
+      "url": "http://localhost:9000",
       "webRoot": "${workspaceFolder}/01-basic"
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "02-google-maps",
+      "url": "http://localhost:9000",
+      "webRoot": "${workspaceFolder}/02-google-maps"
     }
   ]
 }
