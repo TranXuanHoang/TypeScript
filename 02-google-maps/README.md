@@ -1,6 +1,10 @@
 # Maps
 
-Demonstrate how to use third-party libraries in combination with `TypeScript` through building a simple web app that uses `Google Maps` APIs (specifically [Geocoding API](https://developers.google.com/maps/documentation/geocoding/overview)) to display a map and let user select a location on the map, then display the coordinates of that location.
+Demonstrate how to use third-party libraries in combination with `TypeScript` through building a simple web app that uses `Google Maps` APIs (specifically [Geocoding API](https://developers.google.com/maps/documentation/geocoding/overview) and [Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/overview)) to allow users enter an arbitrary address then shows a map with a marker of the location of that address.
+
+<p align="center">
+  <img src="./docs/AppCapture.gif" width="60%"/>
+</p>
 
 ## 3rd-Party Packages
 
@@ -15,6 +19,8 @@ The project uses the following 3rd-party `npm` packages
 | [typescript](https://www.npmjs.com/package/typescript) | `dev` | A language for application scale JavaScript development |
 | [ts-loader](https://www.npmjs.com/package/ts-loader) | `dev` | TypeScript loader for webpack |
 | [clean-webpack-plugin](https://www.npmjs.com/package/clean-webpack-plugin) | `dev` | A webpack plugin to remove/clean build directory(ies) |
+| [axios](https://www.npmjs.com/package/axios) | `production` | Promise based HTTP client for the browser and Node.js |
+| [@types/googlemaps](https://www.npmjs.com/package/@types/googlemaps) | `dev` | Provides type definitions for Google Maps APIs |
 
 ## Source Code
 
@@ -23,6 +29,7 @@ Switch the source code to versions described below to view different implementat
 | Git Tag | Implementation |
 |---------|----------------|
 | [v2.0.0](https://github.com/TranXuanHoang/TypeScript/releases/tag/v2.0.0) | Basic setup for this app (including Webpack build configs) |
+| [v2.0.1](https://github.com/TranXuanHoang/TypeScript/releases/tag/v2.0.1) | Add location searching with Google Maps APIs |
 
 ## Run App
 
