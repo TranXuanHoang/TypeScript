@@ -1,6 +1,6 @@
 # Maps
 
-Demonstrate how to use third-party libraries in combination with `TypeScript` through building a simple web app that uses `Google Maps` APIs to display a map and let user select location on the map, then display the coordination of that location.
+Demonstrate how to use third-party libraries in combination with `TypeScript` through building a simple web app that uses `Google Maps` APIs (specifically [Geocoding API](https://developers.google.com/maps/documentation/geocoding/overview)) to display a map and let user select a location on the map, then display the coordinates of that location.
 
 ## 3rd-Party Packages
 
