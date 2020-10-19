@@ -28,6 +28,7 @@ module.exports = {
   devServer: {
     // For devServer configuration, see https://webpack.js.org/configuration/dev-server/
     contentBase: [path.join(__dirname), path.join(__dirname, 'dist')],
+    publicPath: '/dist/',
     compress: true,
     open: true,
     watchContentBase: true,
